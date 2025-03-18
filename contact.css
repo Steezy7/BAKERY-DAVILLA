@@ -1,0 +1,341 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
+nav {
+    max-width: 100%;
+    background-color: #9B1B30;
+    padding: 10px 20px;
+    color: rgb(245, 245, 220);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 50000;
+}
+
+.nav-contents {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.nav-logo h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #f5e1c9;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+.nav-links a:hover,
+.nav-links a#contact {
+    color: rgb(255, 233, 213);
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.nav-toggle button{
+    display: none;
+    background-color: #f5e1c9;
+    color: #9b1b30;
+    border: none;
+    font-size: 1.5rem;
+    width: 2rem;
+}
+
+/* Mobile Navbar */
+@media (max-width: 768px) {
+
+    .nav-links a{
+        font-size: 1.3rem;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #9B1B30;
+        padding: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    .nav-toggle button{
+        display: block;
+    }
+}
+
+.hero{
+    display: flex;
+    width: 100%;
+    min-height: 47rem;
+    background: linear-gradient(rgba(245,245,222, 0.8), rgba(245, 245, 220, 0.8)), url(./Screenshot\ 2025-03-10\ 195510.png);
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+
+.cont{
+    gap: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact h2{
+    color: rgb(245, 245, 220);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+}
+
+.contact label{
+    border-bottom: 5px solid white;
+    border-radius: 0.1rem;
+}
+
+.contact p{
+    color: rgb(245, 245, 220);
+    font-size: 1.2rem;
+}
+
+.fa-location-arrow, .fa-phone, .fa-envelope{
+   background-color: rgb(245, 245, 220);
+   border-radius: 50%; 
+   margin-right: 1rem;
+   padding: 0.7rem;
+   color: #A62C2B;
+}
+
+.location, .phone, .mail{
+    display: flex;
+}
+
+.red{
+    font-family: "Oleo Script Swash Caps", system-ui;
+    font-weight: 200;
+    color: #af9a7b;
+    font-style: normal;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    color: rgb(245, 245, 220);
+    text-align: center;
+
+}
+
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 2rem;
+    width: 80%; /* Adjust width */
+    max-width: 600px; 
+    background-color: #9B1B30;
+    height: 105%;
+    border-radius: 10px 0 0 10px; 
+}
+
+.form-container {
+    width: 80%; /* Adjust width */
+    max-width: 600px; /* Prevent it from being too large */
+    height: 105%;
+    padding: 20px;
+    border: 2px solid #333; /* Add border */
+    border-radius: 0 10px 10px 0; /* Make edges rounded */
+    background: #f8f8f8 !important; /* Background color */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    opacity: 1 !important;
+    z-index: 20000;
+    margin-top: 20px;
+}
+
+.hero{
+    padding: 4rem;
+    z-index: 2000;
+}
+
+@media(max-width:768px) {
+
+    .break{
+        display: block;
+    }
+
+    .hero{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .cont{
+        gap: 0;
+        height: 30rem;
+    }
+
+    .form-container{
+        border-radius: 10px; /* Make edges rounded */
+    }
+
+    .contact-right{
+        border-radius: 10px; /* Make edges rounded */
+        height: 35rem;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #A62C2B;
+    padding: 3.9rem;
+    text-align: center;
+    color: rgb(245, 245, 220);
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    gap: 1.5rem;
+    
+}
+
+.link h2,
+.socials h2,
+.footer-text h2,
+.footer-dist h2 {
+    font-family: "Oleo Script Swash Caps", system-ui;
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: rgb(245, 245, 220);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    font-family: "Oleo Script Swash Caps", system-ui;
+}
+
+.three, 
+.two{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.socials{
+    font-family: "Oleo Script Swash Caps", system-ui;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer-links a,
+.socials a {
+    text-decoration: none;
+    color: rgb(245, 245, 220);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.footer-links a:hover,
+.socials a:hover {
+    color: rgb(255, 200, 200);
+}
+
+/* Footer ending section */
+.ending {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-top: 1rem;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.footer-comp label {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.footer-comp span {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.footer-dist a{
+    text-decoration: none;
+    color:#9b1b30;
+    background-color: #f5e1c9;
+    width: 20%;
+    padding: 0.3rem;
+    border-radius: 1rem;
+}
+
+.footer-dist a:hover{
+    background-color: #e15b64;
+    color: #f5e1c9;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .ending{
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-dist{
+        margin-bottom: 2rem;
+    }
+}

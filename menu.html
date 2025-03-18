@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./menu.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-contents">
+            <div class="nav-logo">
+                <h2>Davila Bakes</h2>
+
+            </div>
+
+            <div class="nav-links">
+                <a href="./Index.html" id="home">Home</a>
+                <a href="./menu.html" id="menu">Order</a>
+                <a href="./About.html">About</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+
+            <div class="nav-toggle">
+                <button type="button" onclick="toggle()">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <button class="btn-ord" onclick="document.querySelector('.form-container').scrollIntoView({behavior: 'smooth'});">
+            Click to Order Now
+        </button>
+        <div class="container">
+            <div class="slide" id="bottom">
+        
+                <div class="item">
+                        <img class="it" src="./Screenshot 2025-03-10 185924.png" class="background-image">
+                    <div class="content">
+                        <div class="name">BUTTER <span class="break">BREAD</span></div>
+                        <div class="des">You’re a beautiful <span class="break">person, inside and out</span></div>
+                    </div>
+                </div>
+        
+                <div class="item">
+                        <img src="./Screenshot 2025-03-10 185954.png" class="background-image">
+                    <div class="content up">
+                        <div class="name">BURGER <span class="break">BREAD</span></div>
+                        <div class="des">Superpowers - spreading <span class="break">smiles and being pretty</span></div>
+                    </div>
+                </div>
+        
+                <div class="item">
+                        <img src="./Screenshot 2025-03-10 190034.png" class="background-image">
+                    <div class="content">
+                        <div class="name">CHOCOLATE <span class="break">BREAD</span></div>
+                        <div class="des">Her Smile Cheers<span class="break"> me up instantly</span></div>
+                    </div>
+                </div>
+        
+                <div class="item">
+                        <img src="./Screenshot 2025-03-10 195510.png" class="background-image">
+                    <div class="content">
+                        <div class="name">BANANA <span class="break">BREAD</span></div>
+                        <div class="des">Just Sharing with<span class="break"> her makes you feel better</span></div>
+                    </div>
+                </div>
+        
+                <div class="item">
+                        <img src="./Screenshot 2025-03-10 190034.png" class="background-image">
+                    <div class="content">
+                        <div class="name">SARDINE <span class="break">BREAD</span></div>
+                        <div class="des">One of the Best <span class="break">Friends 2023 Gave me</span></div>
+                    </div>
+                </div>
+        
+                <div class="item">
+                        <img src="./Screenshot 2025-03-10 185924.png" class="background-image">
+                    <div class="content">
+                        <div class="name">MASSIVE ENERGY&#x1F61D;</div>
+                        <div class="des">Her vibe is <span class="break">Electric</span></div>
+                    </div>
+                </div>
+        
+            </div>
+        
+            <div class="button">
+                <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>  
+        
+        <div class="form-container">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc5nvi_efep_1w77_lviwIONjHHKFzSHIPaOZoXMcaqdTYloA/viewform?usp=dialog"
+                width="100%" height="100%" frameborder="0">
+            </iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="link">
+                <h2>Links</h2>
+                <div class="footer-links">
+                    <div class="three">
+                        <a href="./Index.html">home</a>
+                        <a href="./About.html">about</a>
+                        <a onclick="document.querySelector('.form-container').scrollIntoView({behavior: 'smooth'});">Order</a>
+                    </div>
+                    <div class="two">
+                        <a href="./contact.html">contact</a>
+                        <a href="./About.html">team</a>
+                    </div>
+                </div>
+            </div>
+            <div class="socials">
+                <h2>Socials</h2>
+                <a href=""><i class="fa-brands fa-facebook"></i><label> Facebook</label></a><br>
+                <a href=""><i class="fa-brands fa-instagram"></i><label> Instagram</label></a><br>
+                <a href=""><i class="fa-brands fa-twitter"></i><label> Twitter</label></a>
+            </div>
+            <div class="footer-text">
+                <h2>Satisfying Customers<br>Since 2023</h2>
+            </div>
+
+            <div class="footer-dist">
+                <h2>For Distributors, click the link below<br><a onclick="document.querySelector('.form-container').scrollIntoView({behavior: 'smooth'});">Order Now</a></h2>
+            </div>
+        </div>
+        <hr>
+        <div class="ending">
+            <div class="footer-comp">
+                <label>Davila Bakes and Bakery<br><span>...a taste for more</label>
+            </div>
+            <div class="footer-copy">
+                &copy; 2025 Davila Bakes and Bakery. All rights reserved.
+            </div>
+        </div>
+        <hr>
+    </footer>
+
+    <script>
+    let next = document.querySelector(".next");
+    let prev = document.querySelector(".prev");
+
+    next.addEventListener("click", function(){
+        let items = document.querySelectorAll(".item");
+        document.querySelector(".slide").appendChild(items[0]); // Move first item to the end
+    });
+
+    prev.addEventListener("click", function(){
+        let items = document.querySelectorAll(".item");
+        document.querySelector(".slide").prepend(items[items.length - 1]); // Move last item to the beginning
+    });
+
+    let autoSlide = setInterval(() => next.click(), 3000);
+
+    function toggle(){
+            let navbar = document.querySelector(".nav-links");
+            navbar.classList.toggle("nav-toggle"); 
+        }
+
+    </script>
+    
+</body>
+</html>

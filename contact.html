@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./contact.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-contents">
+            <div class="nav-logo">
+                <h2>Davila Bakes</h2>
+
+            </div>
+
+            <div class="nav-links">
+                <a href="./Index.html" id="home">Home</a>
+                <a href="./menu.html">Order</a>
+                <a href="./About.html">About</a>
+                <a href="./contact.html" id="contact">Contact</a>
+            </div>
+
+            <div class="nav-toggle">
+                <button type="button" onclick="toggle()">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="contact-right">
+            <div class="cont">
+                <div class="contact">
+                    <h2><label>CONT</label>ACT US</h2>
+                    <p>We would love to hear from you</p>
+                </div>
+                <div class="location">
+                    <div class="loc-icon">
+                        <i class="fa fa-location-arrow"></i>
+                    </div>
+                    <div class="loc-text">
+                        <label class="red">Address: </label>
+                        <span class="text">43c Aderele Street,<br>Egbeda, Lagos Nigeria</span>
+                    </div>
+                </div>
+
+
+                <div class="phone">
+                    <div class="phone-icon">
+                        <i class="fa-solid fa-phone"></i>
+                </div>
+                    <div class="phone-text">
+                        <label class="red">Phone:</label>
+                        <span class="text"> +2348135501094</span>
+                    </div>
+                </div>
+
+
+                <div class="mail">
+                    <div class="mail-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="mail-text">
+                        <label class="red">Email:</label>
+                        <span class="text"> davilabakes<label class="break">bread@gmail.com</label></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="form-container">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKcFmKXQ1foL42WCt4SpcAJg_4AMi1atK3XyZOxKTeYbKsGg/viewform?usp=dialog"
+                width="100%" height="600px" frameborder="0">
+            </iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="link">
+                <h2>Links</h2>
+                <div class="footer-links">
+                    <div class="three">
+                        <a href="./index.html">home</a>
+                        <a href="./About.html">about</a>
+                        <a href="./menu.html">menu</a>
+                    </div>
+                    <div class="two">
+                        <a href="./contact.html">contact</a>
+                        <a href="./About.html">team</a>
+                    </div>
+                </div>
+            </div>
+            <div class="socials">
+                <h2>Socials</h2>
+                <a href=""><i class="fa-brands fa-facebook"></i><label> Facebook</label></a>
+                <a href=""><i class="fa-brands fa-instagram"></i><label> Instagram</label></a>
+                <a href=""><i class="fa-brands fa-twitter"></i><label> Twitter</label></a>
+            </div>
+            <div class="footer-text">
+                <h2>Satisfying Customers<br>Since 2023</h2>
+            </div>
+
+            <div class="footer-dist">
+                <h2>For Distributors, click the link below<br><a href="./menu.html">Order Now</a></h2>
+            </div>
+        </div>
+        <hr>
+        <div class="ending">
+            <div class="footer-comp">
+                <label>Davila Bakes and Bakery<br><span>...a taste for more</span></label>
+            </div>
+            <div class="footer-copy">
+                &copy; 2025 Davila Bakes and Bakery. All rights reserved.
+            </div>
+        </div>
+        <hr>
+    </footer>
+
+    <script>
+        function toggle(){
+            let navbar = document.querySelector(".nav-links");
+            navbar.classList.toggle("nav-toggle"); 
+        }
+    </script>
+    
+</body>
+</html>
