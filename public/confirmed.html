@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./confirm.css">
+    
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-left">
+            <div class="headline">
+                <div class="nav-toggle">
+                    <button type="button" onclick="toggle()">☰</button>
+                </div>
+                <h1>Confirmed Orders</h1>
+            </div>
+            <div class="hero" id="orders-container">
+                <table class="orders-table">
+                    <thead> 
+                      <tr class="head">
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                        <th>Items Ordered</th>
+                        <th>Quantity</th>
+                        <th>Total ($)</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody id="orders-table-body">
+                      <!-- Orders will be populated here -->
+                    </tbody>
+                  </table>
+            </div>            
+        </div>
+    </nav>
+    <div class="navbar">
+            <h1>Davila Bakes & Bakery</h1>
+            <div class="links">
+                <a href="./dashboard.html" id="dash">Dashboard</a>
+                <a href="./confirmed.html" id="confirm">Confirmed Orders</a>
+                <a href="./rejected.html" id="reject">Rejected Orders</a>
+            </div>    
+    </div>
+
+    <script>
+        function toggle(){
+            document.querySelector(".navbar").classList.toggle("show")
+        }
+
+        async function fetchOrders() {
+        try {
+            const res = await fetch("http://localhost:3000/api/confirmed-orders");
+            const orders = await res.json();
+
+            const container = document.getElementById("orders-container");
+            
+            const tbody = document.getElementById("orders-table-body");
+            tbody.innerHTML = "";
+
+            orders.forEach(order => {
+        const row = document.createElement("tr");
+
+        const items = order.orders.map(item => 
+            `${item.name}`
+        ).join("<br>");
+
+        const quantity = order.orders.map(item => 
+            `${item.quantity}`
+        ).join("<br>");
+
+        row.innerHTML = `
+            <td>${order.fullname}</td>
+            <td>${order.email}</td>
+            <td>${order.phone_no}</td>
+            <td>${order.address}</td>
+            <td>${items}</td>
+            <td class="center">${quantity}</td>
+            <td>$${order.totalprice.toFixed(2)}</td>
+            <td>${new Date(order.createdAt).toLocaleString()}</td>
+            <td>${order.status}</td>
+        `;
+        tbody.appendChild(row);
+        });
+        } catch (err) {
+            console.error("Failed to fetch orders:", err);
+        }
+        }
+
+    fetchOrders();
+
+    </script>
+</body>
+</html>

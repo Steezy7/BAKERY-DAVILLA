@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+     <div class="nav-toggle">
+        <button type="button" onclick="toggle()">☰</button>
+    </div>
+
+    <nav>
+        <div class="nav-content" id="nav">
+            <div class="logo">
+                <h2>Davila Bakes</h2>
+            </div>
+            <div class="links">
+                <a href="" id="home">Home</a>
+                <a href="./menu.html" id="order">Order</a>
+                <a href="./About.html" id="about">About</a>
+                <a href="./contact.html" id="contact">Contact</a>
+            </div>
+            <div class="contact">
+                <div class="mail-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div class="face-book">
+                    <i class="fa-brands fa-facebook""></i>
+                </div>
+
+                <div class="phone">
+                    <div class="phone-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <p>09056594353</p>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero_content">
+            <div class="left">
+                <label>#1 Bakery</label>
+                <strong>Davila Bakes and<br>  <span id="red">Bakery</span></strong>
+                <p>We are commited to delivering high-quality, delicious baked goods that bring joy to our customers.we are commited to using the best ingrideints and ensuring that every item <br> we make is made with love and care.</p>
+                <a href="./menu.html" id="ord">Order Now <i class="fa-solid fa-play"></i></a>
+
+                <div class="icon-stack">
+                    <img src="./images/lizgrin-f-RgTfqgl2jzQ-unsplash.jpg" class="icon">
+                    <img src="./images/mile-modic-Sv9xCQ7RBCs-unsplash.jpg" class="icon">
+                    <img src="./images/lizgrin-f-RgTfqgl2jzQ-unsplash.jpg" class="icon">
+                    <img src="./images/moaz-tobok-pUKhFH9kLYA-unsplash.jpg" class="icon">
+                    <img src="./images/mile-modic-Sv9xCQ7RBCs-unsplash.jpg" class="icon">
+                    <h1> 10K+ <span id="small">Reviews</span></h1>
+                </div>
+            </div>
+
+            <div class="right">
+                <img src="../images/bread.png">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggle(){
+            console.log("toggle clicked")
+            let navbar = document.querySelector(".nav-content");
+            navbar.classList.toggle("show"); 
+
+            document.querySelector(".links").classList.toggle("change")
+            document.querySelector(".contact").classList.toggle("flex")
+            document.querySelector(".phone").classList.toggle("height")
+
+        }
+    </script>
+</body>
+</html>
