@@ -81,7 +81,7 @@ app.post('/submit', (req, res) => {
             return res.status(500).send('Error sending email: ' + error.toString());
         }
         console.log('Email sent:', info.response);
-        res.status(200).send('Email sent: ' + info.response);
+        alert("email Sent")
     });
 });
 
