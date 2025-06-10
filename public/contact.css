@@ -75,7 +75,6 @@ nav {
         left: 0;
         width: 100%;
         background-color: #f5e1c9;
-        padding: 1rem;
     }
 
     .nav-links.active {
@@ -86,7 +85,7 @@ nav {
         display: block;
         cursor: pointer;
         font-size: 1.5rem;
-        padding: 1rem;
+        padding: 1rem 0;
     }
 
     .nav-toggle button{
@@ -178,7 +177,6 @@ nav {
     width: 80%; /* Adjust width */
     max-width: 600px; /* Prevent it from being too large */
     height: 105%;
-    padding: 20px;
     border: 2px solid #333; /* Add border */
     border-radius: 10px; /* Make edges rounded */
     background: #f8f8f8 !important; /* Background color */
@@ -186,7 +184,7 @@ nav {
     opacity: 1 !important;
     z-index: 20000;
     margin-top: 20px;
-    padding:2rem 6.5rem;
+    padding:2rem 2rem;
 }
 
 .error-border{
@@ -247,9 +245,11 @@ form button{
     border-radius: 50%;
 }
 
-@media (max-width:768px) {
-    
-    
+@media (max-width:450px) {
+    .form-container .logo{
+        margin-left: 0;
+        text-align: center;
+    }
 }
 
 .hero{

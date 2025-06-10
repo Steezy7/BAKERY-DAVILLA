@@ -327,6 +327,16 @@ nav > .nav-content > .contact > .height{
     width: 100%;
 }
 
+section > .hero_content > .left > a{
+    width: 50%
+}
+
+@media(max-width: 600px){
+    section > .hero_content > .left > a{
+        width: 85%;
+    }
+}
+
 #order:hover,
 #about:hover,
 #contact:hover{
@@ -336,4 +346,6 @@ nav > .nav-content > .contact > .height{
 }
 
 }
+
+
 

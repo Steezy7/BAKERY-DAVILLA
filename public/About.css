@@ -78,7 +78,6 @@ nav {
         left: 0;
         width: 100%;
         background-color: #f5e1c9;
-        padding: 1rem;
         justify-content: space-between;
     }
 
@@ -90,7 +89,7 @@ nav {
         display: block;
         cursor: pointer;
         font-size: 1.5rem;
-        padding: 1rem;
+        padding: 1rem 0;
     }
 
     .nav-toggle button {
@@ -441,6 +440,27 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
 
+}
+
+@media(max-width:570px){
+    .saying-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .people-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:450px){
+    .saying-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .people-grid{
+        grid-template-columns: repeat(1, 1fr);
+        width: 70%;
+    }
 }
 
 .sayers img{
