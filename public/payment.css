@@ -26,6 +26,7 @@ body{
     max-width: 100%;
     min-height: 77.5vh;
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -216,5 +217,62 @@ button{
 @media(max-width:700px){
     .summary-content > span{
         font-size: 1.5rem;
+    }
+
+    .hero{
+        padding: 1rem;
+        min-height: 89vh;
+    }
+
+    .form-container{
+        width: 100%;
+    }
+
+    .nav-content >h1{
+        font-size: 2rem;
+    }
+
+    .payment-cont{
+        width: 80%;
+    }
+
+    .payment-cont > .make-payment h1,
+    .summary > .summary-content > h1{
+        font-size: 2rem;
+    }
+
+    .wrap{
+        word-wrap: break-word;
+    }
+
+    .card > .innerCard > h1{
+        font-size: 2rem;
+    }
+
+    .card > .innerCard > h3{
+        font-size: 1.5rem;
+    }
+
+    .card > .innerCard{
+        max-width: 75%;
+    }
+
+    #cancel{
+        font-size: 1.5rem;
+        width: 1rem;
+        height: 4rem;
+        border-radius: 50%;
+    }
+
+    .innerCard > img{
+        width: 40%;
+    }
+
+    .innerCard{
+        height: 40%;
+    }
+
+    .card{
+        height: 170vh;
     }
 }

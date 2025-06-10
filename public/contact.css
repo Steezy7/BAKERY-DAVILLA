@@ -413,8 +413,7 @@ footer {
 #alertBanner{
     position: fixed;
     top: 0;
-    left: 27%;
-    min-width: 49%;
+    min-width: 100%;
     font-size: 3rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     min-height: 5rem;

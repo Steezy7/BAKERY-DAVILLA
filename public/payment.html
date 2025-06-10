@@ -52,7 +52,7 @@
                 <label>Phone</label><br>
                 <span id="phone"></span><br><br>
                 <label>Email</label><br>
-                <span id="mail"></span><br><br>
+                <span id="mail" class="wrap"></span><br><br>
                 <label>Address</label><br>
                 <span id="address"></span><br><br>
                 
@@ -185,6 +185,9 @@
             }else{
                 event.preventDefault();
             }
+
+            const section=document.getElementById("payment");
+            section.scrollIntoView({behavior: "smooth"})
         }
 
         function checkInput(input, id){
