@@ -638,6 +638,11 @@ hr{
         padding-top: 1rem;
     }
 
+    .confirmNumber{
+        width: 10rem;
+        margin-left: 1rem;
+    }
+
 }
 
 #total-items, #total-price{
@@ -662,6 +667,7 @@ justify-content: space-between;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+   margin-left: 2rem;
 }
 
 #mine .confirmNumber span{
@@ -729,7 +735,24 @@ justify-content: space-between;
     
     .nav-links > a{
         font-size: 1rem;
-} 
+}
+
+    .hero-content> .left > h1{
+        margin-left: 1rem;
+    }
+
+    .confirm-content{
+        padding: 1rem;
+        min-width: 90%;
+    }
+
+    .confirm-content > h1{
+        font-size: 2rem;
+    }
+
+    .confirmNumber{
+        width: 10rem;
+    }
 }
 
 

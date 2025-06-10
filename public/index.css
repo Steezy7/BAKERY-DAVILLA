@@ -131,7 +131,7 @@ section > .hero_content > .left{
 }
 
 section > .hero_content > .left > label{
-    background: url(../images/paint.png) no-repeat center;
+    background: url(images/paint.png) no-repeat center;
     font-size: 1.5rem;
     background-size: cover;
     width: 30%;
@@ -260,7 +260,7 @@ section > .hero_content > .right > img{
     }
 
     section > .hero_content > .left{
-        width: 60%;
+        width: 50%;
     }
 
     section > .hero_content > .right{
@@ -277,6 +277,10 @@ section > .hero_content > .right > img{
 
     section > .hero_content > .left > .icon-stack > h1{
         font-size: 2rem;
+    }
+
+    section > .hero_content > .left > label{
+        width: 30%;
     }
 
     #small{
@@ -328,12 +332,59 @@ nav > .nav-content > .contact > .height{
 }
 
 section > .hero_content > .left > a{
-    width: 50%
+    width: 40%
 }
 
 @media(max-width: 600px){
     section > .hero_content > .left > a{
-        width: 85%;
+        width: 35%;
+    }
+
+    section > .hero_content > .left > label{
+        width: 40%;
+    }
+
+    section > .hero_content > .left > strong{
+        font-size: 3rem;
+    }
+}
+
+@media(max-width: 826px){
+    section > .hero_content > .left > a{
+        width: 45%;
+    }
+
+    section > .hero_content > .left > label{
+        width: 40%;
+    }
+}
+
+@media(max-width:750px){
+    section > .hero_content > .left > a{
+        width: 60%;
+    }
+}
+
+@media(max-width:600px){
+    section > .hero_content > .left > label{
+        width: 50%;
+        font-size: 1rem;
+    }
+
+     section > .hero_content > .left > a{
+        font-size: 1rem;    }
+}
+
+@media(max-width: 516px){
+    section > .hero_content > .left > a{
+        width: 40%;
+    }
+    section > .hero_content > .left > label{
+        width: 30%;
+    }
+
+    section > .hero_content > .left{
+        width: 100%;
     }
 }
 
