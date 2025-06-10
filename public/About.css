@@ -477,6 +477,16 @@ footer {
     
 }
 
+@media(max-width: 450px){
+    .nav-links > a{
+        font-size: 1rem;
+    }
+
+   .hero .container .image h1{
+        font-size: 3rem;
+    }
+} 
+
 .scroll-target {
     opacity: 0;
     transform: translateY(100px); /* Move it down initially */
