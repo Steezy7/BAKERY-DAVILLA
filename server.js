@@ -80,7 +80,7 @@ app.post('/submit', (req, res) => {
             console.log('Error:', error);
             return res.status(500).send('Error sending email: ' + error.toString());
         }
-        console.log('Email sent:', info.response);
+        // console.log('Email sent:', info.response);
         res.status(204).send();
     });
 });
