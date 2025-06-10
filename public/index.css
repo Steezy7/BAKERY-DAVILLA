@@ -388,6 +388,12 @@ section > .hero_content > .left > a{
     }
 }
 
+@media(max-width: 400px){
+    section > .hero_content > .left > a{
+        width: 70%;
+    }
+}
+
 #order:hover,
 #about:hover,
 #contact:hover{

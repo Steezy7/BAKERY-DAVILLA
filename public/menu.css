@@ -562,9 +562,6 @@ hr{
 
 .confirm-content{
     background-color: #f5e1c9;
-
-    min-height: 50%;
-    max-height: 90%;
     overflow-x: hidden;
     overflow-y: scroll;
     opacity: 5;
@@ -643,6 +640,12 @@ hr{
         margin-left: 1rem;
     }
 
+}
+
+@media(max-width: 320px){
+    .hero-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 #total-items, #total-price{
