@@ -65,7 +65,9 @@ app.post('/submit', (req, res) => {
         },
         tls: {
             rejectUnauthorized: false,
-        }
+        },
+        logger: false,   // <-- prevent internal logger
+        debug: false     // <-- disable debug output
     });
 
     const mailOptions = {
