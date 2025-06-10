@@ -409,3 +409,26 @@ footer {
         margin-bottom: 2rem;
     }
 }
+
+#alertBanner{
+    position: fixed;
+    top: 0;
+    left: 27%;
+    min-width: 49%;
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 5rem;
+    padding-bottom: 2rem;
+    margin: auto;
+    background-color: rgb(85, 79, 79);
+    color: white;
+    text-align: center;
+    
+    z-index: 10000000;
+    transition: top 0.3s ease-in-out;
+}
+
+.hidden{
+    display: none;
+}
+
