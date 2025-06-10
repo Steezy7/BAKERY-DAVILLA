@@ -75,14 +75,6 @@ app.post('/submit', (req, res) => {
         text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nSubject: ${subject}\nMessage: ${message}`,
     };
 
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            console.log('Error:', error);
-            return res.status(500).send('Error sending email: ' + error.toString());
-        }
-        console.log('Email sent:', info.response);
-        alert("email Sent")
-    });
 });
 
 // ✅ Save customer order
