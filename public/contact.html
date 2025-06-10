@@ -16,7 +16,7 @@
     <div id="alertBanner" class="hidden">
 
     </div>
-    
+
     <nav>
         <div class="nav-contents">
             <div class="nav-logo">
@@ -150,6 +150,16 @@
     </footer>
 
     <script>
+        function showAlert(duration = 3000){
+            const banner = document.getElementById("alertBanner");
+            banner.textContent = "ITEM ADDED TO CART";
+            banner.classList.remove("hidden");
+
+            setTimeout(()=>{
+                banner.classList.add("hidden");
+            }, duration)
+        }
+
         function valid() {
             let firstName = document.getElementById("Fname");
             let email = document.getElementById("email");
@@ -196,6 +206,7 @@
 
         async function handleSubmit(event) {
     event.preventDefault(); // Stop normal form submission
+    showAlert();
 
     if (!valid()) return false;
 
