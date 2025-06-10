@@ -208,7 +208,7 @@
         });
 
         if (response.status === 204) {
-            // ✅ Success, do nothing
+            form.reset(); // ✅ Clear the form fields
         } else {
             console.warn("Unexpected response status:", response.status);
         }
@@ -216,7 +216,7 @@
         console.error("Submission error:", err);
     }
 
-    return false; // Prevent default behavior just in case
+    return false;
 }
 
     </script>
